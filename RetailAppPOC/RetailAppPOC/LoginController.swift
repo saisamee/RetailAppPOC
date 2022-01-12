@@ -22,6 +22,7 @@ class LoginController: UIViewController {
         salesRepID.layer.cornerRadius = 10
         password.layer.cornerRadius = 10
         loginButton.layer.cornerRadius = 10
+        loginButton.titleLabel?.text = "LOGIN"
         
         // Do any additional setup after loading the view.
     }
