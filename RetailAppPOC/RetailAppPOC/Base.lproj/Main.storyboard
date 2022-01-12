@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="RetailAppPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-gv-ckT">
+                                <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5K-VR-JHH">
+                                <rect key="frame" x="110" y="290" width="600" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Sz-ND-ynI">
+                                        <rect key="frame" x="8" y="8" width="584" height="584"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="T-Mobile_logo_pink" translatesAutoresizingMaskIntoConstraints="NO" id="0k6-t8-oAK">
+                                                <rect key="frame" x="177" y="0.0" width="230" height="220"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="Ot1-5p-wcG"/>
+                                                    <constraint firstAttribute="height" constant="220" id="WL6-sz-q6Y"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQn-e6-2dG">
+                                                <rect key="frame" x="191.5" y="243.5" width="201" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9rK-cy-Qn7"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="RETAIL SALES">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="32"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sales Rep ID" minimumFontSize="18" background="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-rV-QDl">
+                                                <rect key="frame" x="117" y="317" width="350" height="70"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="350" id="9Ad-EG-zJq"/>
+                                                    <constraint firstAttribute="height" constant="70" id="BdC-at-6Uu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-vV-fmy">
+                                                <rect key="frame" x="117" y="410.5" width="350" height="70"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="EyZ-8Y-EIO"/>
+                                                    <constraint firstAttribute="width" constant="350" id="eWt-DB-uEs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpP-hE-wPU">
+                                                <rect key="frame" x="142" y="504" width="300" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.14849790261882623" blue="0.50925527567801787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="SfQ-jl-BX0"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ckS-4q-O9F"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="45"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uc6-gc-E6F"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="6Rl-mP-CnR"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="7Sz-ND-ynI" secondAttribute="bottom" id="8oy-OR-8Wf"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="7Sz-ND-ynI" secondAttribute="trailing" id="Dn1-Wd-wEQ"/>
+                                    <constraint firstItem="7Sz-ND-ynI" firstAttribute="top" secondItem="D5K-VR-JHH" secondAttribute="topMargin" id="Hjj-Vo-9A3"/>
+                                    <constraint firstItem="7Sz-ND-ynI" firstAttribute="leading" secondItem="D5K-VR-JHH" secondAttribute="leadingMargin" id="MIe-PE-e0V"/>
+                                    <constraint firstAttribute="height" constant="600" id="QXH-zw-0MF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D5K-VR-JHH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JOg-g7-T0c"/>
+                            <constraint firstItem="ETf-gv-ckT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lt5-TY-Cgd"/>
+                            <constraint firstItem="D5K-VR-JHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEQ-ks-O7R"/>
+                            <constraint firstItem="ETf-gv-ckT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="RFh-Lo-XNx"/>
+                            <constraint firstAttribute="bottom" secondItem="ETf-gv-ckT" secondAttribute="bottom" id="lY0-Ug-hIj"/>
+                            <constraint firstItem="ETf-gv-ckT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wxl-Eh-4OY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="jpP-hE-wPU" id="vpz-dt-7VN"/>
+                        <outlet property="loginView" destination="D5K-VR-JHH" id="M3y-Qg-WvV"/>
+                        <outlet property="password" destination="aeb-vV-fmy" id="FOF-eB-aOy"/>
+                        <outlet property="salesRepID" destination="bdz-rV-QDl" id="iUx-oD-O4I"/>
+                        <outlet property="tmoLogo" destination="0k6-t8-oAK" id="FKQ-VF-U0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.170731707317072" y="38.644067796610173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="T-Mobile_logo_pink" width="1841" height="1311"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="wallpaper" width="1920" height="1080"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
